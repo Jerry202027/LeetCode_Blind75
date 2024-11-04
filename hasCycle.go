@@ -1,9 +1,6 @@
 package main
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+
 
 // https://leetcode.com/problems/linked-list-cycle/?envType=problem-list-v2&envId=oizxjoit
 func hasCycle(head *ListNode) bool {
