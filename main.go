@@ -8,10 +8,9 @@ type ListNode struct {
 }
 
 func main() {
-	stairs := 5
-
-	fmt.Println(climbStairs(stairs))
-
+	list := createList([]int{1, 2, 3, 4, 5})
+	result := reverseList(list)
+	fmt.Println(listToArray(result))
 }
 
 func createList(nums []int) *ListNode {
@@ -25,4 +24,13 @@ func createList(nums []int) *ListNode {
 		current = current.Next
 	}
 	return head
+}
+
+func listToArray(head *ListNode) []int {
+	result := []int{}
+	for head != nil {
+		result = append(result, head.Val)
+		head = head.Next
+	}
+	return result
 }

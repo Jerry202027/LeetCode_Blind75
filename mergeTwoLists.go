@@ -9,14 +9,6 @@ package main
 // result := mergeTwoLists(list1, list2)
 // fmt.Println("Test 1:", listToArray(result))
 
-func listToArray(head *ListNode) []int {
-	result := []int{}
-	for head != nil {
-		result = append(result, head.Val)
-		head = head.Next
-	}
-	return result
-}
 
 // my concept
 // time O(n), space O(1)
