@@ -7,6 +7,12 @@ type ListNode struct {
 	Next *ListNode
 }
 
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
 func main() {
 	list := createList([]int{1, 2, 3, 4, 5})
 	result := reverseList(list)

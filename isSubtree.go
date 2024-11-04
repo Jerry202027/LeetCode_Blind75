@@ -2,12 +2,6 @@ package main
 
 import "fmt"
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 // https://leetcode.com/problems/subtree-of-another-tree/?envType=problem-list-v2&envId=oizxjoit
 
 // test case
